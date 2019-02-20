@@ -1,1 +1,1 @@
-add_lunch_combo revenge_h930-userdebug
+add_lunch_combo bootleg_h930-userdebug

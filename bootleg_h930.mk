@@ -1,14 +1,14 @@
 $(call inherit-product, device/lge/h930/full_h930.mk)
 
-# Inherit some common RevemgeOS stuff.
-$(call inherit-product, vendor/revemgeos/config/common.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device identifiers
 
-PRODUCT_NAME := revemge_h930
+PRODUCT_NAME := bootleg_h930
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RELEASE_NAME := V30
@@ -18,6 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="joan" \
     PRODUCT_NAME="joan_global_com" \
     PRIVATE_BUILD_DESC="joan_global_com-user 8.0.0 OPR1.170623.026 183202318d019 release-keys"
+    DEVICE_MAINTAINERS="Scissordragonboy | Yassh Malik"
 
 BUILD_FINGERPRINT="lge/joan_global_com/joan:8.0.0/OPR1.170623.026/183202318d019:user/release-keys"
 
