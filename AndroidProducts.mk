@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/havoc_h930.mk
+    $(LOCAL_DIR)/xperia_h930.mk
